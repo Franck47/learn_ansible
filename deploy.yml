@@ -24,4 +24,4 @@
         name: webapp
         image: httpd
         ports:
-          - "80:8"
+          - "80:80"
