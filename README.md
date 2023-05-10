@@ -4,8 +4,10 @@
 
 su - admin 
 
-##Creer les clé ssh sur la machine node, et voir le contenu du i 
+##Creer les clé ssh sur la machine node, et voir le contenu du id_rsa.pub puis copier
 ssh-keygen
 cat .ssh/id_rsa.pub
 
-## Copier ce clé la sur le repo github 
+## Coller le contenu du  id_rsa.pub la sur le repo github 
+Profil -> Settings -> SSH and GPG Keys -> New ssh-key
+
