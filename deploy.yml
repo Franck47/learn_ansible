@@ -3,8 +3,8 @@
 - name: "Installation d'un conteneur apache"
   hosts: prod
   become: true
-#  vars:
-#    ansible_sudo_pass: admin
+  vars_files:
+    - files/secrets/credentials.yml
   pre_tasks:
     - name: Install some package
       package: name='{{ item }}' state=present
